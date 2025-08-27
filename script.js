@@ -10,7 +10,7 @@ function disableOptions() {
 }
 
 function loadQuestion() {
-    const nextButton = document.getElementById("Enter Your ID to get reward!");
+    const nextButton = document.getElementById("next");
     nextButton.disabled = true;
     document.getElementById("feedback").textContent = "";
 
@@ -42,7 +42,7 @@ function loadQuestion() {
     });
 }
 
-document.getElementById("Enter Your ID to get reward!").onclick = () => {
+document.getElementById("next").onclick = () => {
     // Replace 'YOUR_GOOGLE_SITES_URL' with the actual URL of the page where you embedded the Google Form.
     window.location.href = 'https://sites.google.com/view/camainteng/feedback';
 };
