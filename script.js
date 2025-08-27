@@ -44,7 +44,7 @@ function loadQuestion() {
 
 document.getElementById("next").onclick = () => {
     // Replace 'YOUR_GOOGLE_SITES_URL' with the actual URL of the page where you embedded the Google Form.
-    window.location.href = 'https://script.google.com/macros/s/AKfycby4KvB0MoCdxBT-Ff42DAjrhjj-ZCp3fQ7CKrHB-NhbtqnYsXSKaqY_qmRg9CyyrP6Eqw/exec';
+    window.location.href = 'https://script.google.com/macros/s/AKfycbz0rGKd05Jp06lKRQnGDxKF-EQRlUvXVUE-MH3OeKkpKvlNT07SkfGQznTYw4UHBxxntg/exec';
 };
 
 loadQuestion();
