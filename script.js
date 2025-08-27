@@ -43,9 +43,8 @@ function loadQuestion() {
 }
 
 document.getElementById("next").onclick = () => {
-    document.querySelector('.container').innerHTML = `
-        <img src="transducer_a.png" alt="Congratulations" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-    `;
+    // Replace 'YOUR_GOOGLE_SITES_URL' with the actual URL of the page where you embedded the Google Form.
+    window.location.href = 'https://sites.google.com/view/camainteng/feedback';
 };
 
 loadQuestion();
