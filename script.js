@@ -12,9 +12,12 @@ function disableOptions() {
 function loadQuestion() {
     const nextButton = document.getElementById("next");
     nextButton.disabled = true;
+    // --- Start of change ---
+    nextButton.style.display = "none"; // Hide the button initially
+    // --- End of change ---
     document.getElementById("feedback").textContent = "";
 
-    // 顯示題目圖片
+    // Display question image
     document.getElementById("question").innerHTML = `
         <img src="transducer_b.png" alt="Question Image" style="max-width: 100%; height: auto;">
     `;
@@ -32,6 +35,9 @@ function loadQuestion() {
                 document.getElementById("feedback").textContent = "✅ Correct!";
                 disableOptions();
                 nextButton.disabled = false;
+                // --- Start of change ---
+                nextButton.style.display = "block"; // Or "inline-block"
+                // --- End of change ---
             } else {
                 btn.classList.add("incorrect");
                 document.getElementById("feedback").textContent = "❌ Wrong. Try again.";
