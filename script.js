@@ -12,9 +12,7 @@ function disableOptions() {
 function loadQuestion() {
     const nextButton = document.getElementById("next");
     nextButton.disabled = true;
-    // --- Start of change ---
-    nextButton.style.display = "none"; // Hide the button initially
-    // --- End of change ---
+    nextButton.style.display = "none";
     document.getElementById("feedback").textContent = "";
 
     // Display question image
@@ -35,9 +33,8 @@ function loadQuestion() {
                 document.getElementById("feedback").textContent = "✅ Correct!";
                 disableOptions();
                 nextButton.disabled = false;
-                // --- Start of change ---
-                nextButton.style.display = "block"; // Or "inline-block"
-                // --- End of change ---
+                nextButton.style.display = "block";
+                nextButton.style.margin = "0 auto"; // Centers the button horizontally
             } else {
                 btn.classList.add("incorrect");
                 document.getElementById("feedback").textContent = "❌ Wrong. Try again.";
